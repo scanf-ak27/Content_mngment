@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Content Management Tool Webpage</title>
+</head>
+<body>
+    <header>
+    <h1>Content Management Tool Site</h1>
+  </header>
+  <section>
+    <form id="blogForm" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="title">Enter a Title:</label>
+        <input type="text" id="title" name="title" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="video">Choose a Video:</label>
+        <input type="file" id="video" name="video" accept="video/*" required>
+      </div>
+      <div class="form-group">
+        <label for="image">Choose an Image:</label>
+        <input type="file" id="image" name="image" accept="image/*" required>
+      </div>
+      <div class="form-group">
+        <label for="content">Type the Content Description:</label>
+        <textarea id="content" name="content" style="height:200px"></textarea>
+      </div>
+     
+      <div class="form-submit">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <div id="submitted-content">
+      <h2>Lets Create </h2>
+      <p><strong>Title:</strong> <span id="title-display"></span></p>
+      <p><strong>Video:</strong></p>
+      <video id="video-display" src="" controls></video>
+      <p><strong>Image:</strong></p>
+      <img id="image-display" src="" alt="Your Images are Submitted..Thank You!">
+      <p><strong>Content:</strong> <span id="content-display"></span></p>
+    </div>
+  </section>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #051d5a;
+    }
+    
+    header {
+    background-color: #2eefe5;
+    color: #051d5a;
+    padding: 30px;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+     
+    :hover{
+      cursor:pointer;
+      color: black;    
+      transition: 0.4s;
+      transform: translatey(-2rem);
+      background: -webkit-linear-gradient(150120deg,hsl(56, 92%, 57%),hsl(32, 89%, 48%),hsl(0, 97%, 51%));
+      -webkit-background-clip:text;
+      -webkit-text-fill-color: transparent;
+      
+    }
+    }
+    
+    section {
+    margin: 30px;
+    }
+    
+    form {
+    text-align: center;
+    font-style: bold;
+    font-style: italic;
+    font-size: 40px;
+    background-color: #4bf3ed;
+    padding: 100px;
+    border-radius: 100px;
+    
+
+          :hover{
+            color: #efec47;
+          }
+    }
+    
+    .form-group {
+    margin-bottom: 10px;
+    }
+    
+    label {
+    display: block;
+    margin-bottom: 5px;
+    }
+    
+    textarea,
+    input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #2eefe5;
+    }
+    
+    .form-submit{
+        /* text-align: center; */
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    button[type="submit"]{
+      border-radius: 4px;
+      background-color: #f4511e;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 28px;
+      padding: 20px;
+      width: 200px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+
+      :hover{
+        color: #efec47;
+      }
+    }
+    
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+    
+    .button span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 2s;
+    }
+    
+    #submitted-content {
+    display: none;
+    margin-top: 40px;
+    }
+    
+    h2 {
+    color: #d10606;
+    }
+    
+    #content-display {
+    margin-bottom: 10px;
+    white-space: pre-line;
+    }
+    
+    #image-display,
+    #video-display {
+    display: block;
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    }
+    
+    #title-display,
+    #content-display {
+      margin-bottom: 10px;
+      white-space: pre-line;
+      
+    }
+    
+    #image-display {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+    }
+    
+    #video-display {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+    }
+  
